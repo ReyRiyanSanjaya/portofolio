@@ -23,7 +23,7 @@ Wrapper
     .wrapper {
         position: absolute;
         top: 50%;
-        left: 35%;
+        left: 50%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         width: 369px;
@@ -34,24 +34,6 @@ Wrapper
         -webkit-transform: translate(-50%, -50%) perspective(600px) rotateY(20deg) rotateX(10deg);
         transform: translate(-50%, -50%) perspective(600px) rotateY(20deg) rotateX(10deg);
     }
-    
-    .wrappere {
-        position: absolute;
-        top: 50%;
-        left: 65%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        width: 369px;
-        height: 547px;
-        font-family: 'Source Sans Pro', sans-serif;
-        -webkit-transform-style: preserve-3d;
-        transform-style: preserve-3d;
-        -webkit-transform: translate(-50%, -50%) perspective(600px) rotateY(20deg) rotateX(10deg);
-        transform: translate(-50%, -50%) perspective(600px) rotateY(20deg) rotateX(10deg);
-    }
-    /*--------------------
-Me
---------------------*/
     
     .me {
         position: relative;
@@ -100,85 +82,4 @@ Me
         top: -2px;
         left: 80px;
     }
-    
-    .text::after {
-        content: 'Sanjaya';
-        width: 100%;
-        position: absolute;
-        bottom: 22px;
-        left: 0;
-        width: 100%;
-        z-index: 1;
-        line-height: 1;
-        font-size: 18px;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 20px;
-        text-indent: 20px;
-    }
     /* akhir */
-    
-    .mee {
-        position: relative;
-        width: 369px;
-        height: 547px;
-        -webkit-transform: translateZ(80px) scale(0.8);
-        transform: translateZ(80px) scale(0.8);
-    }
-    
-    .mee::before,
-    .mee::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        border-radius: 10px;
-        background: url("../img/portfolio/rey.png") no-repeat 0 0;
-    }
-    
-    .mee::after {
-        height: 30px;
-        top: auto;
-        bottom: -15px;
-        z-index: -1;
-        -webkit-filter: blur(15px);
-        filter: blur(15px);
-        background-size: 100% 30px;
-        border-radius: 100px;
-    }
-    
-    .mee .eyee,
-    .mee .eyee::before {
-        width: 70px;
-        height: 70px;
-        position: absolute;
-        top: 160px;
-        left: 116px;
-        transform: translate();
-        z-index: -1;
-        background: url(http://www.supah.it/dribbble/006/eye.png) no-repeat center;
-    }
-    
-    .mee .eyee::before {
-        content: '';
-        top: -2px;
-        left: 80px;
-    }
-    
-    .texte::after {
-        content: 'Sanjaya';
-        width: 100%;
-        position: absolute;
-        bottom: 22px;
-        left: 0;
-        width: 100%;
-        z-index: 1;
-        line-height: 1;
-        font-size: 18px;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 20px;
-        text-indent: 20px;
-    }

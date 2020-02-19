@@ -37,6 +37,8 @@ h6.center {
 
 .contact-content a:after,
 .contact-content a:before,
+.about-content__text a:after,
+.about-content__text a:before,
 .main-menu ul a:after,
 .works__imgs__item__bg span:after,
 .works__titles__item span:before,
@@ -3066,4 +3068,42 @@ Me
     content: '';
     top: -2px;
     left: 80px;
+}
+
+.about-content__text a:after,
+.about-content__text a:before {
+    margin-right: 380px;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 5px;
+    bottom: 14px;
+    background: #fff;
+    -webkit-transform-origin: right center 0;
+    -ms-transform-origin: right center 0;
+    transform-origin: right center 0;
+    -webkit-transition: -webkit-transform .7s cubic-bezier(.23, 1, .32, 1) 0s;
+    -o-transition: transform .7s cubic-bezier(.23, 1, .32, 1) 0s;
+    transition: transform .7s cubic-bezier(.23, 1, .32, 1) 0s;
+    transition: transform .7s cubic-bezier(.23, 1, .32, 1) 0s, -webkit-transform .7s cubic-bezier(.23, 1, .32, 1) 0s
+}
+
+.about-content__text a:after {
+    z-index: 1;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    background: rgba(80, 32, 48, .6)
+}
+
+.about-content__text a.is-active:after,
+.about-content__text a:hover:after {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: left center 0;
+    -ms-transform-origin: left center 0;
+    transform-origin: left center 0;
+    color: rgba(80, 32, 48, .6);
 }
